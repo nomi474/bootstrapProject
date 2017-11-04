@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Contact - Clean & Clear</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/custom.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js\jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="js\bootstrap.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#address').popover('animation')
+            });
+        </script>
+    </head>
+
+    <body>
+    <script type="text/javascript" src="partials/header.js"></script>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>       
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+          </div>
+        </div>        
+      </form>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end Login Modal-->
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="input" class="form-control" id="inputEmail3" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm Password">
+          </div>
+        </div>             
+      </form>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end Register Modal-->
+        <div class="container">   
+            <div class="row pad-top-30">
+                <div class="inner-page col-md-8">
+                    <div id="contact" class="well">
+                      <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.470417657026!2d55.29773564988436!3d25.254756183790242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4324d222dcd7%3A0x4f4bfe34f180c0ef!2s9+18+St+-+Dubai!5e0!3m2!1sen!2sae!4v1509788628559" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br />
+                      <br><br>
+                      <button type="button" id="address" class="btn btn-lg btn-primary" data-toggle="popover" title="Address" data-content="9 18 St Umm al Sheif, Sheikh Zayed Rd Dubai UAE">Get Address</button>
+                      <br><br>
+                      <h3>Contact Us</h3>
+                      <p>Please use the form below to contact us</p>
+                      <form>
+                        <div class="form-group">
+                        <label class="col-form-label" for="formGroupExampleInput">Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                      </form>
+                    </div>
+                </div><!-- /. col-md-8 -->
+
+                <!-- Sidebar -->
+                <div class="col-md-4">   
+                    <div class="list-group list-group">
+                        <a href="index.html" class="list-group-item">Home</a>
+                        <a href="about.html" class="list-group-item">About</a>
+                        <a href="innovate.html" class="list-group-item">Innovate</a>
+                        <a href="blog.html" class="list-group-item">Blog</a>
+                        <a href="contact.html" class="list-group-item active">Contact Us</a>
+                    </div><!-- /. list-group -->
+                    <div class="grey-list list-group">
+                        <a href="#" class="list-group-item active">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        </a>
+                    </div><!-- /. list-group -->
+                </div><!-- /. col-md-4 -->           
+            </div> <!-- /row -->  
+        </div> <!-- /container -->
+      <script type="text/javascript" src="partials/footer.js"></script>
+    </body>
+</html>

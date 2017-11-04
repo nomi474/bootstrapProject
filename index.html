@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home - Clean & Clear</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js\jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js\bootstrap.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('#tooltip1').tooltip('hide')
+    		$('#tooltip2').tooltip('hide')
+    	});
+    </script>
+  </head>
+  <body>
+  	<script type="text/javascript" src="partials/header.js"></script>
+	<!-- Login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="loginModalLabel">Login Form</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+			  <div class="form-group row">
+			    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    </div>
+			  </div>			 
+			  <div class="form-group row">
+			    <div class="col-sm-12">
+			      <div class="form-check">
+			        <label class="form-check-label">
+			          <input class="form-check-input" type="checkbox"> Remember me
+			        </label>
+			      </div>
+			    </div>
+			  </div>			  
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <div class="form-group row">
+			    <div class="col-sm-10">
+			      <button type="submit" class="btn btn-primary">Sign in</button>
+			    </div>
+			  </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!--end Login Modal-->
+	<!-- Register Modal -->
+	<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group row">
+			    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+			    <div class="col-sm-10">
+			      <input type="input" class="form-control" id="inputEmail3" placeholder="Name">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm Password">
+			    </div>
+			  </div>			 			 
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <div class="form-group row">
+			    <div class="col-sm-10">
+			      <button type="submit" class="btn btn-primary">Sign up</button>
+			    </div>
+			  </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!--end Register Modal-->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-md-offset-5">
+					<div class="jumbotron-content">
+						<h1>Clean & Clear HTML5 Template</h1>
+						<p class="lead">Clean & Clear is a responsive HTML5 template based on the Twitter Bootstrap framework.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="bluebox">
+					<h3><i class="fa fa-book" aria-hidden="true"></i>  Learn...</h3>
+					<p>
+						<a href="#" data-toggle="tooltip" id="tooltip1" title="This is the first tooltip">Lorem ipsum dolor sit amet, </a>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<a class="readmore" href="innovate.html#learn">Read More</a>
+				</div><!--end "bluebox"-->
+			</div><!--end "col-md-4"-->
+			<div class="col-md-4">
+				<div class="redbox">
+					<h3><i class="fa fa-eye" aria-hidden="true"></i>  Create...</h3>
+					<p>
+						Nec ullamcorper sit amet risus nullam. <a href="#" data-toggle="tooltip" id="tooltip2" title="This is the second tooltip">Facilisis magna etiam tempor orci eu lobortis elementum nibh.</a> 
+					</p>
+					<a class="readmore" href="innovate.html#create">Read More</a>
+				</div><!--end "redbox"-->
+			</div><!--end "col-md-4"-->
+			<div class="col-md-4">
+				<div class="bluebox">
+					<h3><i class="fa fa-road" aria-hidden="true"></i>  Teach...</h3>
+					<p>
+						Leo vel orci porta non pulvinar. Magna ac placerat vestibulum lectus.  
+					</p>
+					<a class="readmore" href="innovate.html#teach">Read More</a>
+				</div><!--end "bluebox"-->
+			</div><!--end "col-md-4"-->
+		</div><!--end row -->
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="card">
+				  <div class="card-header">What's Happening In The World.</div><!--end "card-header"-->
+				  <div class="card-body">
+				  	<div class="media">
+					  <img class="mr-3 rounded-circle" src="images/small1.jpg" alt="Small image">
+					  <div class="media-body">
+					    <h5 class="mt-0">Media heading</h5>
+					    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					  </div><!--end "media-body"-->
+					</div><!--end "media"-->
+					<div class="spacer"></div>
+					<div class="media">
+					  <img class="mr-3 rounded-circle" src="images/small2.jpg" alt="Small image">
+					  <div class="media-body">
+					    <h5 class="mt-0">Media heading</h5>
+					    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					  </div><!--end "media-body"-->
+					</div><!--end "media"-->
+					<div class="spacer"></div>
+					<div class="media">
+					  <img class="mr-3 rounded-circle" src="images/small3.jpg" alt="Small image">
+					  <div class="media-body">
+					    <h5 class="mt-0">Media heading</h5>
+					    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					  </div><!--end "media-body"-->
+					</div><!--end "media"-->
+				  </div><!--end "card-body"-->
+			</div><!--end "card"-->
+			</div><!--end "col-md-8"-->
+			<!-- Sidebar -->
+			<div class="col-md-4">
+				<div class="list-group">
+				  <a href="index.html" class="list-group-item list-group-item-action active">
+				    Home
+				  </a>
+				  <a href="about.html" class="list-group-item list-group-item-action">About</a>
+				  <a href="innovate.html" class="list-group-item list-group-item-action">Innovate</a>
+				  <a href="blog.html" class="list-group-item list-group-item-action">Blog</a>
+				  <a href="contact.html" class="list-group-item list-group-item-action disabled">Contact Us</a>
+				</div><!--end "list-group"-->
+				<div class="grey-list list-group">
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+				    <div class="d-flex w-100 justify-content-between">
+				      <h5 class="mb-1">List group item heading</h5>
+				      <small>3 days ago</small>
+				    </div>
+				    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				    <small>Donec id elit non mi porta.</small>
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+				    <div class="d-flex w-100 justify-content-between">
+				      <h5 class="mb-1">List group item heading</h5>
+				      <small>3 days ago</small>
+				    </div>
+				    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				    <small>Donec id elit non mi porta.</small>
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+				    <div class="d-flex w-100 justify-content-between">
+				      <h5 class="mb-1">List group item heading</h5>
+				      <small>3 days ago</small>
+				    </div>
+				    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				    <small>Donec id elit non mi porta.</small>
+				  </a>
+				</div><!--end "list-group"-->
+			</div><!--end "col-md-8"-->
+		</div><!--end row -->
+	</div><!--end container-->
+	<script type="text/javascript" src="partials/footer.js"></script>
+  </body>
+</html>

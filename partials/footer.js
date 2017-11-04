@@ -1,0 +1,1 @@
+document.write("<footer>Copyright &copy 2017, Clean & Clear</footer>");
